@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Pics</title>
+</head>
+<body>
+    <main>  
+        <header>
+            <h2>Search for content, or choose random photo</h2>
+        </header>
+        <div id="inputField">
+            <input type="text">
+        </div>
+        <div id="buttons">
+            <button id="searchButton" onClick="searchPhotos()">Search</button>
+            <button id="nextButton" onClick='searchPhotos("next")' >Next</button>
+            <button id="prevButton" onClick='searchPhotos("prev")' disabled="true">Prev</button>
+            <button id="randomButton" onClick="randomPhoto()">Random</button>
+        </div>
+        <article>
+            <div id="imageResults">
+
+            </div>
+        </article>
+    </main>
+</body>
+<script src="./index.js"></script>
+</html>
